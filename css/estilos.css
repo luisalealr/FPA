@@ -1,3 +1,5 @@
+/*Estilos para el menu y navbar*/
+
 body{
     margin: 0;
     padding: 0;
@@ -19,12 +21,32 @@ body{
     align-items: center;
 }
 
+.navegacion-index-2{
+    background-color: #4F6E85;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px;
+    align-items: center;
+    color: white;
+}
+
 .barra{
     align-items: center;
 }
 
 .barra a{
     padding-left: 15px;
+}
+
+.item-derecho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-derecho a{
+    padding-left: 60px;
 }
 
 .imagen-exit{

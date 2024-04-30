@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan';
+}
+
+/*Estilos para el index*/
+
+.navegacion-index-1 {
+    color: white;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(../img/fondo-index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 10px;
+    align-items: center;
+    font-size: larger;
+}
+
+.lista-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.lista-nav li {
+    padding-left: 60px;
+}
+
+.lista-nav li a:hover {
+    cursor: pointer;
+    color: #4F6E85;
+    transition: 300ms;
+}
+
+.contenido-navbar {
+    text-align: center;
+}
+
+.contenido-navbar h1 {
+    font-size: 60px;
+    line-height: 80px;
+}
+
+.contenido-navbar p {
+    font-size: 25px;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.contenido-navbar hr {
+    padding: 0 250px;
+    margin-bottom: 25px;
+    width: 60%;
+    height: 3px;
+    background-color: white;
+}
+
+/*Estilos para el login*/
+
+.cuerpo{
+    background-color: #1B1B1B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contenedor{
+    background-color: white;
+    border-radius: 80px;
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 400px;
+    color: #002948;
+}
+
+.contenedor p{
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.contenedor span{
+    font-size: 20px;
+    color: #002948;
+    font-weight: bold;
+}
+
+.contenedor button{
+    background-color: #002948;
+    color: white;
+    font-size: 18px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contenedor form{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.contenedor input{
+    background-color: #D9D9D9;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 30px;
+    width: 100%;
+    outline: none;
+}
+
+.form-contenedor {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.contenedor.active .sign-in{
+    transform: translateX(100%);
+}
+
+.sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.contenedor.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.toggle-contenedor{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+.contenedor.active .toggle-contenedor{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle{
+    background-color: #4F6E85;
+    height: 100%;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    color: white;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.contenedor.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left{
+    transform: translateX(-200%);
+}
+
+.contenedor.active .toggle-left{
+    transform: translateX(0);
+}
+
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.contenedor.active .toggle-right{
+    transform: translateX(200%);
+}
