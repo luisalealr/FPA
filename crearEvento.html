@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ver eventos</title>
+    <link rel="stylesheet" href="../css/cuadricula.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=League Spartan"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styleEvento.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <iframe class="header" src="../views/navbar.html"></iframe>
+      <iframe class="menu" src="../views/menu.html"></iframe>
+      <div class="contenido">
+        <h2 class="titulo">Crear Evento</h2>
+        <div class="crearEvento">
+          <label for="nombreEvento">Nombre del Evento:</label>
+          <input class="entrada" type="text" id="nombreEvento" name="nombreEvento" placeholder="Ingrese el nombre del evento" required/>
+
+          <div class="subirImagen">
+            <label for="imagenEvento">Subir Imagen:</label>
+            <input type="file" id="imagenEvento" name="imagenEvento" />
+            <button id="examinarBtn">Examinar</button>
+          </div>
+        </div>
+
+        <div class="botones">
+          <button id="cancelarBtn">Cancelar</button>
+          <button id="guardarBtn">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
