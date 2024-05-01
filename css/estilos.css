@@ -8,8 +8,12 @@ body{
 }
 
 .cuerpo{
-    width: 230px;
+    width: 227px;
     align-items: left;
+    overflow: hidden;
+    border-right-color: #4F6E85;
+    border-right-width: 2px;
+    border-right-style: solid;
 }
 
 .navegacion{
@@ -32,7 +36,16 @@ body{
 }
 
 .barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
     align-items: center;
+}
+
+.icon-responsive{
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .barra a{
@@ -58,17 +71,22 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    width: 100%;
     margin: 0;
     padding: 0;
-    border-right-color: #4F6E85;
-    border-right-width: 2px;
-    border-right-style: solid;
 }
 
 .imagen-user{
     width: 40px;
     height: auto;
+}
+
+.imagen-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .user{
@@ -77,7 +95,7 @@ body{
     align-items: center;
     padding: 10px;
     background-color: #D9D9D9;
-    width: 208px;
+    width: unset;
 }
 
 .datos-user{
@@ -90,10 +108,9 @@ body{
 }
 
 .lista-principal{
-    padding-left: 15px;
-    padding-top: 15px;
-    list-style: none;
     margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .r-user{
@@ -104,13 +121,13 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
 .lista-secundaria{
     list-style: none;
-    padding-left: 26px;
+    padding-left: 45px;
 }
 
 .imagen-item{
@@ -120,10 +137,49 @@ body{
 
 .elemento-2{
     font-size: medium;
-    padding: 6px 0;
+    padding: 10px 6px;
+}
+
+.elemento-2:hover{
+    color: #4F6E85;
+    transition: 0.5s;
 }
 
 .titulo-elemento-1{
     padding-left: 6px;
     align-items: center;
+}
+
+.elemento--click{
+    cursor: pointer;
+}
+
+.lista-item:hover {
+    background-color: #aec2d1;
+    transition: 0.5s;
+}
+
+/*Menu desplegable*/
+
+.lista-secundaria{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.5s ease-in-out;
+}
+
+.lista-secundaria.active{
+    max-height: 1000px;
+    transition: max-height 1.5s ease-in-out;
+}
+
+.lista-secundaria:not(.active){
+    transition: max-height 0.5s ease-out;
+}
+
+.arrow .list-arrow {
+    transform: rotate(90deg);
+}
+
+.list-arrow {
+    margin-left: 10px;
 }
