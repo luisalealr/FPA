@@ -45,6 +45,10 @@
     align-items: center;
 }
 
+.lista-nav a{
+    color: white;
+}
+
 .lista-nav li {
     padding-left: 60px;
 }
@@ -78,6 +82,95 @@
     background-color: white;
 }
 
+.elementos{
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 520px;
+}
+
+.caja-elementos{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.elemento-item{
+    background-color: #6A8BA4;
+    width: 260px;
+    height: 380px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 1px 1px 5px #002948;
+}
+
+.elemento-item p{
+    color: #002948;
+    font-size: 23px;
+    width: 70%;
+    text-align: center;
+}
+
+.elemento-item img{
+    height: 100px;
+    width: auto;
+}
+
+.circulo{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    border-radius: 100%;
+}
+
+.ir-a-eventos{
+    background-color: #002948;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+.ir-a-eventos button{
+    background-color: #6A8BA4;
+    color: white;
+    font-size: 30px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px #002948;
+}
+
+.ir-a-eventos p{
+    padding: 20px;
+}
+
+.texto{
+    width: 75%;
+}
+
+.footer{
+    height: 100px;
+    background-color: black;
+}
+
 /*Estilos para el login*/
 
 .cuerpo{
@@ -98,6 +191,7 @@
     max-width: 100%;
     min-height: 400px;
     color: #002948;
+    box-shadow: 5px 5px 20px black;
 }
 
 .contenedor p{
@@ -139,7 +233,7 @@
     border: none;
     margin: 8px 0;
     padding: 10px 15px;
-    font-size: 13px;
+    font-size: 20px;
     border-radius: 30px;
     width: 100%;
     outline: none;
@@ -150,6 +244,14 @@
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
+}
+
+.form-contenedor span{
+    padding: 5px;
+}
+
+.form-contenedor h1{
+    padding: 5px;
 }
 
 .sign-in{
