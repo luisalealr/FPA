@@ -1,0 +1,70 @@
+.contenido {
+
+    border-bottom: 1px solid #002948;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.titulo {
+    margin-top: 25px;
+    color: #002948;
+}
+
+.actuales {
+    margin-top: 50px;
+    color: #002948;
+    margin-left: 30px;
+}
+
+.linea {
+    border-bottom: 1.5px solid #a0a0a0;
+    width: 90%;
+    margin: 0 ;
+   /* bdosrcdmer: 60px;   */
+}
+.cua{
+    display: flex;
+    align-items: center; 
+}
+.cuadro {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    width: 70px; 
+  height: 80px; 
+  margin: 0 auto 5px; 
+  }
+  
+  .txt {
+    text-align: left;
+    margin-left: 10px;
+  }
+  
+  .botones {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .eliminar, .editar {
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .eliminar {
+    margin-left: 50px;
+    background-color: #FF6347; 
+  }
+  
+  .editar {
+    margin-right: 50px;
+    background-color: #6495ED; 
+  }
