@@ -7,10 +7,10 @@ input[type="file"] {
   margin-left: 60px;
 }
 
-.titulo {
-  margin-top: 25px;
-  color: #002948;
-}
+  .titulo {
+    margin-top: 25px;
+    color: #002948;
+  }
 
 .crearEvento {
   border: 3px solid #4F6E85;
