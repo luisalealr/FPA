@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Versión del Evento</title>
+    <link rel="stylesheet" href="../css/cuadricula.css">
+    <link href="https://fonts.googleapis.com/css?family=League Spartan" rel="stylesheet">
+    <link rel="stylesheet" href="../css/editarVersionEvento.css">
+</head>
+<body>
+    <div class="contenedor">
+        <iframe class="header" src="../views/navbar.html"></iframe>
+        <iframe class="menu" src="../views/menu.html"></iframe>
+        <div class="contenido">
+            <h2 class="titulo">Editar Versión del Evento</h2>
+            <div class="editarVersion">
+                <div class="nombreEvento">
+                    <label for="nombreEvento">Nombre del Evento:</label>
+                    <input type="text" id="nombreEvento" name="nombreEvento"  required>
+                </div>
+                <div class="tipoEvento">
+                    <label for="tipoEvento">Tipo de Evento:</label>
+                    <input type="text" id="tipoEvento" name="tipoEvento" required>
+                </div>
+                <div class="fechaInicioFin">
+                    <label for="fechaInicio">Fecha de Inicio:</label>
+                    <input type="date" id="fechaInicio" name="fechaInicio" required>
+                    <label for="fechaFin">Fecha de Fin:</label>
+                    <input type="date" id="fechaFin" name="fechaFin" required>
+                </div>
+                <div class="fechaCierre">
+                    <label for="fechaCierre">Fecha Cierre de Inscripciones:</label>
+                    <input type="date" id="fechaCierre" name="fechaCierre" required>
+                </div>
+                <div class="rubrica">
+                    <label for="rubrica">Rúbrica de Calificación:</label>
+                    <button class="btnRubrica" id="verRubrica">Ver Rúbrica</button>
+                </div>
+                <div class="correoPermitido">
+                    <label for="correoPermitido">Correos Permitidos:</label>
+                    <input type="text" id="correoPermitido" name="correoPermitido" required>
+                </div>
+                <div class="formatoProyecto">
+                    <label for="formatoProyecto">Formato del Proyecto:</label>
+                    <input type="file" id="formatoProyecto" name="formatoProyecto" accept=".pdf,.doc,.docx">
+                    <button class="examinar" id="examinarFormato">Examinar</button>
+                </div>
+            </div>
+            <div class="botones">
+                <button id="cancelarBtn">Cancelar</button>
+                <button id="guardarBtn">Guardar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
