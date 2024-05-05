@@ -1,108 +1,89 @@
-.titulo {
-  margin-top: 50px;
-  margin-left: 40px;
-  color: #002948;
+.contenido h2 {
+    margin-top: 50px;
+    margin-left: 40px;
+    color: #002948;
 }
 
-.contenedorCua {
-  width: 80%;
-  /* Ancho deseado del contenedor */
-  margin: 0 auto;
-  /* Centra el contenedor horizontalmente */
-  padding: 20px;
-  /* Añade espacio alrededor del contenedor */
+.caneca {
+    flex-direction: column;
+    display: flex;
+    width: 400px;
+    /* Ancho del cuadro */
+    height: 250px;
+    /* Alto del cuadro */
+    border-radius: 15px;
+    /* Bordes redondos */
+    overflow: hidden;
+    /* Para que la imagen no sobresalga del cuadro */
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
-.cuadro {
-  background-color: rgb(148, 167, 182, 0.41);
-  color: #002948;
-  padding: 20px;
-  /* Espacio interno */
-  border-radius: 10px;
-  /* Bordes redondeados */
-  display: flex;
-  /* Para alinear los elementos internos */
-  align-items: center;
-  /* Alinea verticalmente */
+.fotito {
+    object-fit: auto;
 }
 
-.h2 {
-  font-weight: bold;
+.top {
+    height: 60%;
+    border-radius: 15px;
+    width: auto;
+    object-fit: contain;
+}   
+
+.bottom {
+    height: 40%;
+    /* El 40% del cuadro para la parte inferior */
+    background-color: #dddddd;
+    /* Color de fondo */
+    padding: 10px;
+    /* Espaciado interno */
+    
 }
 
-.cuadro p {
-  margin-right: auto;
-  /* Empuja el texto a la izquierda */
-
+.bottom p {
+    margin-top: 0;
+    /* Elimina el margen superior del párrafo */
+    text-align: center;
 }
 
-.cuadro h2 {
-  margin-right: auto;
-
+.buttons {
+    text-align: center;
+    /* Centra los botones horizontalmente */
 }
 
-.cuadro img {
-  margin-left: 10px;
-  /* Espacio a la izquierda de la imagen */
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 5px;
+.buttons button {
+    margin: 10px;
+    /* Espaciado entre los botones */
+    padding: 10px 35px;
+    /* Espaciado interno de los botones */
+    border: none;
 }
-
-.cuadro button {
-  margin-left: 10px;
-  /* Espacio entre la imagen y los botones */
-  border-top: 20px;
-  border-bottom: 20px;
-}
-
-.botones {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
-  justify-content: center;
-  flex-direction: column;
-  margin-right: 20px;
-}
-
-.editar {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.eliminar {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.editar,
-.eliminar {
-  padding: 10px 35px;
-  /* Espacio interno de los botones */
-  border: none;
-  /* Sin borde */
-  border-radius: 20px;
-  /* Bordes redondeados */
-  cursor: pointer;
-  /* Cambia el cursor al pasar sobre ellos */
-  color: rgb(255, 255, 255);
-  background-color: #002948;
-
+.edit, .delete{
+    color: rgb(255, 255, 255);
+    margin: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #002948;
+    cursor: pointer;
+    border-radius: 20px;
 }
 .CrearEvento button{
-  padding: 10px 35px;
-  color: rgb(255, 255, 255);
-  background-color: #002948;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-.CrearEvento {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
-}
+    padding: 10px 35px;
+    color: rgb(255, 255, 255);
+    background-color: #002948;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .CrearEvento {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+  .chepe{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
