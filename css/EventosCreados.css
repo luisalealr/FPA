@@ -1,0 +1,89 @@
+.contenido h2 {
+    margin-top: 50px;
+    margin-left: 40px;
+    color: #002948;
+}
+
+.caneca {
+    flex-direction: column;
+    display: flex;
+    width: 400px;
+    /* Ancho del cuadro */
+    height: 250px;
+    /* Alto del cuadro */
+    border-radius: 15px;
+    /* Bordes redondos */
+    overflow: hidden;
+    /* Para que la imagen no sobresalga del cuadro */
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.fotito {
+    object-fit: auto;
+}
+
+.top {
+    height: 60%;
+    border-radius: 15px;
+    width: auto;
+    object-fit: contain;
+}   
+
+.bottom {
+    height: 40%;
+    /* El 40% del cuadro para la parte inferior */
+    background-color: #dddddd;
+    /* Color de fondo */
+    padding: 10px;
+    /* Espaciado interno */
+    
+}
+
+.bottom p {
+    margin-top: 0;
+    /* Elimina el margen superior del párrafo */
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+    /* Centra los botones horizontalmente */
+}
+
+.buttons button {
+    margin: 10px;
+    /* Espaciado entre los botones */
+    padding: 10px 35px;
+    /* Espaciado interno de los botones */
+    border: none;
+}
+.edit, .delete{
+    color: rgb(255, 255, 255);
+    margin: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #002948;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.CrearEvento button{
+    padding: 10px 35px;
+    color: rgb(255, 255, 255);
+    background-color: #002948;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .CrearEvento {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+  .chepe{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
