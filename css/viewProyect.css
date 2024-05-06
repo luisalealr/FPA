@@ -1,8 +1,8 @@
 .contenido {
-
   border-bottom: 1px solid #002948;
   margin-top: 30px;
   margin-left: 60px;
+  height: 100vh;
 }
 
 .titulo {
@@ -37,6 +37,8 @@
 }
 
 .cuadro {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(148, 167, 182, 0.41);
   border: 2px solid #94A7B6;
   border-radius: 30px;
