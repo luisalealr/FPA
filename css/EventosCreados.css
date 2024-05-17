@@ -2,6 +2,8 @@
     margin-top: 50px;
     margin-left: 40px;
     color: #002948;
+    display: flex;
+    
 }
 
 .caneca {
@@ -11,12 +13,13 @@
     /* Ancho del cuadro */
     height: 250px;
     /* Alto del cuadro */
-    border-radius: 15px;
+    border-radius: 30px;
     /* Bordes redondos */
     overflow: hidden;
     /* Para que la imagen no sobresalga del cuadro */
     margin-left: 30px;
     margin-top: 20px;
+    box-shadow: 1px 1px 5px #29597e;
 }
 
 .fotito {
