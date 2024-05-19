@@ -1,6 +1,6 @@
 let paginaActual = 1;
 const elementosPorPagina = 5; 
-const items = document.querySelectorAll('.si-hay-proyectos .rectangulo');
+const items = document.querySelectorAll('.info-contenido .rectangulo');
 const paginacionContainer = document.getElementById('paginacion');
 
 function mostrarPagina(pagina) {

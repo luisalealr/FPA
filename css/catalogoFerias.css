@@ -17,8 +17,6 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
 }
 
 .titulo {
@@ -148,12 +146,14 @@ h3 {
 .paginacion {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.paginacion button {
+.page-btn,
+.page-number {
     margin: 0 5px;
     padding: 5px 10px;
     border: none;
@@ -165,7 +165,7 @@ h3 {
     font-size: 20px;
 }
 
-.paginacion button.active {
+.page-number.active {
     background-color: #6A8BA4;
     color: white;
 }
