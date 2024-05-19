@@ -6,10 +6,66 @@
     <title>Registrar Proyecto</title>
     <link rel="stylesheet" href="../css/cuadricula.css">
     <link href="https://fonts.googleapis.com/css?family=League Spartan" rel="stylesheet">
+    <link rel="stylesheet" href="../css/registrarProyecto.css">
     <link rel="stylesheet" href="../css/styleProyecto.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
+    <div class="contenedor">
+        <iframe class="header" src="../views/navbar.html"></iframe>
+        <iframe class="menu" src="../views/menu.html"></iframe>
+        <form class="formulario" action="">
+            <div class="contenido">
+                <h2 class="titulo">Registrar Proyecto</h2>
+                <div class="registrarProyecto">
+                    <div class="nombreProyecto">
+                        <label for="nombreProyecto">Nombre del proyecto:</label>
+                        <textarea name="nombreProyecto" id="nombreProyecto" required></textarea>
+                    </div>
+                    <div class="descripcion">
+                        <label for="descripcion">Descripcion:</label>
+                        <textarea name="descripcion" id="descripcion" required></textarea>
+                    </div>
+                    <div class="objetivo">
+                        <label for="objetivo">Objetivo:</label>
+                        <textarea name="objetivo" id="objetivo" required></textarea>
+                    </div>
+                    <div class="feriaInscrita">
+                        <label for="feriaInscrita">Feria Inscrita:</label>
+                        <input type="text" name="asignatura" id="asignatura" required>
+                    </div>
+                    <div class="areaEstudio">
+                        <label for="areaEstudio">Áreas de estudio:</label>
+                        <input type="text" name="areaEstudio" id="areaEstudio" required>
+                    </div>
+                    <div class="urlVideo">
+                        <label for="url">URL video:</label>
+                        <input type="text" name="url" id="url">
+                    </div>
+                    <div class="archivoProyecto">
+                        <label for="archivo">Archivo proyecto:</label>
+                        <input type="file" name="archivo" id="archivo">
+                        <button class="examinar" id="examinar">Examinar</button>
+                    </div>
+                    <div class="integrante">
+                        <label for="integrantes">Integrantes:</label>
+                        <input type="text" name="integrante" id="integrante">
+                        <a href=""><img src="../img/botonX.png" ></a><br>
+                        <button class="btnIntegrantes" id="btnIntegrante">Añadir Integrante</button>
+                    </div>
+                    <div class="area">
+                        <label for="area">Areas:</label>
+                        <input type="text" name="area" id="area">
+                        <a href=""><img src="../img/botonX.png" ></a><br>
+                        <button class="btnArea" id="btnArea">Añadir area</button>
+                    </div>
+                </div>
+            </div>
+            <div class="botones">
+                <button id="cancelarBtn">Cancelar</button>
+                <button id="registrarBtn">Registrar</button>
+            </div>
+        </form>
     <div class="contenedor" id="contenedor">
         <div class="header"></div>
         <div class="menu"></div>
