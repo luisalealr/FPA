@@ -67,13 +67,16 @@ h3 {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    margin-left: 50px;
     align-items: center;
 }
-
+.boton button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 150px;
+}
 .ver-evento {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    
     padding: 10px 35px;
     border: none;
     border-radius: 20px;
