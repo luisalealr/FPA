@@ -28,12 +28,24 @@
   margin: 0;
   /* bdosrcdmer: 60px;   */
 }
-
 .cua {
   font-weight: bold;
   color: #002948;
   display: flex;
   align-items: center;
+}
+.noProyect{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  color: #002948;
+
+}
+.siProyect {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
 }
 
 .cuadro {
@@ -91,6 +103,6 @@
   width: 120px;
 }
 
-.verProyecto{
+.verProyecto {
   width: 150px;
 }
