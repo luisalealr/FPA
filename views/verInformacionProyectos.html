@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Versión del Evento</title>
+    <link rel="stylesheet" href="../css/cuadricula.css">
+    <link href="https://fonts.googleapis.com/css?family=League Spartan" rel="stylesheet">
+    <link rel="stylesheet" href="../css/verInfoPoryectos.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <iframe class="header" src="../views/navbar.html"></iframe>
+        <iframe class="menu" src="../views/menu.html"></iframe>
+        <div class="contenido">
+            <div class="contenido-proyecto">
+                <div class="nombre-proyecto">
+                    <h2>Juego 2D para desarrollar el pensamiento crítico y el pensamiento ágil</h2>
+                </div>
+                <div class="descripcion-proyecto">
+                    <p>El juego 2D que estamos desarrollando es una herramienta educativa diseñada para cultivar el
+                        pensamiento crítico y ágil en los jugadores. A través de desafíos interactivos y situaciones
+                        problemáticas, los usuarios serán estimulados a analizar, evaluar y tomar decisiones rápidas en
+                        un entorno virtual. Desde resolver acertijos hasta tomar decisiones estratégicas, el juego
+                        proporciona una experiencia envolvente que promueve el desarrollo de habilidades cognitivas
+                        fundamentales.</p>
+                </div>
+                <div class="objetivo">
+                    <h2>Objetivo:</h2>
+                </div>
+                <div class="descripcion-objetivo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie augue velit, nec
+                        tincidunt felis feugiat sagittis. Pellentesque fringilla justo in ipsum vehicula blandit.
+                        Vivamus ut bibendum ante.</p>
+                </div>
+                <div class="tabla-informacion">
+                    <table class="tabla">
+                        <tr class="fila">
+                            <td class="columna-item">Feria inscrita:</td>
+                            <td class="columna-desc">Feria de proyectos de Aula v.1</td>
+                        </tr>
+                        <tr class="fila">
+                            <td class="columna-item">Áreas de estudio:</td>
+                            <td class="columna-desc">Razonamiento cognitivo, aprendizaje, challenge</td>
+                        </tr>
+                        <tr class="fila">
+                            <td class="columna-item">URL video:</td>
+                            <td class="columna-desc">No posee</td>
+                        </tr>
+                        <tr class="fila">
+                            <td class="columna-item">Archivo proyecto:</td>
+                            <td class="columna-desc">
+                                <div class="boton-doc">
+                                    Descargar
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="fila">
+                            <td class="columna-item" rowspan="3">Integrantes:</td>
+                            <td class="columna-desc">Jesus Daniel Botello</td>
+                        </tr>
+                        <tr class="fila">
+                            <td class="columna-desc">Andres Gutierrez</td>
+                        </tr>
+                        <tr class="fila">
+                            <td class="columna-desc">Luna Carolina Ballona</td>
+                        </tr>
+                        <tr class="fila">
+                            <td class="columna-item">Calificación:</td>
+                            <td class="columna-desc">76</td>
+                        </tr>
+                        <tr class="fila" id="mainRow">
+                            <td class="columna-item" rowspan="3">Jurados:</td>
+                            <td class="columna-desc columna-eliminar">
+                                Carlos Rene Angarita
+                                <div class="eliminar">x</div>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr class="fila">
+                            <td class="columna-desc columna-eliminar">
+                                Mauricio Andres Vera
+                                <div class="eliminar">x</div>
+                            </td>
+                        </tr>
+                        <tr class="fila">
+                            <td class="columna-desc">
+                                <div class="boton-agregar">
+                                    Asignar jurado
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="calificar">
+                    <div class="boton-calificar">
+                        Calificar
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Correo del jurado:</p>
+            <input class="correo-jurado" type="email" name="correo" id="correo-jurado">
+            <div class="botones">
+                <div class="boton-a close">
+                    Cancelar
+                </div>
+                <div class="boton-a agregar">
+                    Iniciar sesion
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/modal-2.js"></script>
+</body>
+
+</html>
