@@ -49,7 +49,7 @@ body {
 .botones{
     display: flex; /* Utiliza Flexbox para el contenedor */
     justify-content: space-between; /* Espacio igual entre los botones */
-    align-items: center; /* Centra verticalmente los botones */
+    align-items: center; 
     
 }
 .botones button{
