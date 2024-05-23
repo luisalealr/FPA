@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificar Proyecto</title>
+    <link rel="stylesheet" href="../css/cuadricula.css">
+    <link href="https://fonts.googleapis.com/css?family=League Spartan" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/calificarProyecto.css">
+</head>
+<body>
+    <div class="contenedor" id="contenedor">
+        <div class="header"></div>
+        <div class="menu"></div>
+        <div class="contenido">
+            <h2 class="titulo">Calificar: Nombre del proyecto</h2>
+            <div class="calificaciones-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item a evaluar</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Interrogantes y definición del problema</td>
+                            <td><input type="checkbox" name="interrogantes" value="1" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="2" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="3" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="4" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="5" onclick="handleCheckbox(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Organización de la información</td>
+                            <td><input type="checkbox" name="interrogantes" value="1" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="2" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="3" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="4" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="5" onclick="handleCheckbox(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Formulación del problema</td>
+                            <td><input type="checkbox" name="interrogantes" value="1" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="2" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="3" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="4" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="5" onclick="handleCheckbox(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Indagación sobre el tema</td>
+                            <td><input type="checkbox" name="interrogantes" value="1" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="2" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="3" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="4" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="5" onclick="handleCheckbox(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Objetivos del proyecto</td>
+                            <td><input type="checkbox" name="interrogantes" value="1" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="2" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="3" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="4" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="5" onclick="handleCheckbox(this)"></td>
+                        </tr>
+                        <tr>
+                            <td>Referencias</td>
+                            <td><input type="checkbox" name="interrogantes" value="1" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="2" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="3" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="4" onclick="handleCheckbox(this)"></td>
+                            <td><input type="checkbox" name="interrogantes" value="5" onclick="handleCheckbox(this)"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="boton">
+                    <button id="enviarCalificacion">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/registro.js"></script>
+    <script src="../js/menuInclude.js"></script>
+    <script>
+         function handleCheckbox(checkbox) {
+        let row = checkbox.closest('tr');
+        let checkboxes = row.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(cb => {
+            if (cb !== checkbox) cb.checked = false;
+        });
+    }
+
+    document.getElementById('enviarCalificacion').addEventListener('click', function(event) {
+            let rows = document.querySelectorAll('.calificaciones-container tbody tr');
+            let allChecked = true;
+            
+            rows.forEach(row => {
+                let checkboxes = row.querySelectorAll('input[type="checkbox"]');
+                let isChecked = false;
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.checked) isChecked = true;
+                });
+                if (!isChecked) allChecked = false;
+            });
+
+            if (!allChecked) {
+                alert('Por favor, califique todos los items antes de enviar la calificación del proyecto.');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>

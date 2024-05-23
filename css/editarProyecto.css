@@ -3,8 +3,11 @@
   }
   
   input[type="file"] {
-      display: none;
-    }
+    font-size: 18px; /* Cambia el tamaño del texto */
+    padding: 10px; /* Añade padding */
+    cursor: pointer; /* Cambia el cursor para indicar que es clicable */
+    border-radius: 20px;
+}
   
     .nombreProyecto::before,
     .descripcion::before,
@@ -52,7 +55,7 @@
 
   .editarProyecto textarea{
     font-size: 18px;
-    width: 70%;
+    width: 80%;
     height: 40px;
     background: #D9D9D9;
     border-radius: 20px;
@@ -84,8 +87,13 @@
     padding: 10px;
   }
   
+  .eliminarIntegrante {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
   
-.integrante button{
+.btnIntegrantes{
     padding: auto;
     background-color: #D9D9D9;
     color: #002948;
@@ -93,14 +101,20 @@
     border-radius: 50px;
     cursor: pointer;
     border: none;
-    margin-left: 20px;
     padding: 10px 15px;
-    margin-left: 50px;
     margin-bottom: 20px;
     font-size: 15px;
+    margin-left: 18.5%;
+    
 }
   
-.area button{
+.eliminarArea {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btnArea {
     padding: auto;
     background-color: #D9D9D9;
     color: #002948;
@@ -108,10 +122,10 @@
     border-radius: 50px;
     cursor: pointer;
     border: none;
-    margin-left: 20px;
     padding: 10px 15px;
-    margin-left: 50px;
     font-size: 15px;
+    margin-left: 17.5%;
+    margin-top: 20px;
 }
   
   .nombreProyecto label{
@@ -149,7 +163,7 @@
   }
   
   .integrante label{
-      margin-right: 75px;
+      margin-right: 70px;
       margin-left: 25px;
   
   }
@@ -159,18 +173,13 @@
     vertical-align: middle;
   }
   
-  .integrante button{
-    margin-left: 210px;
-  }
+  
   
   .area label{
     margin-right: 115px;
     margin-left: 25px;
   }
   
-  .area button{
-    margin-left: 210px;
-  }
   
   .botones{
     display: flex;

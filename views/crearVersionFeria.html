@@ -42,12 +42,7 @@
                     <div class="flex-group">
                             <div class="formatoProyecto">
                                 <label for="formatoProyecto">Formato del proyecto:</label>
-                                <input type="file" name="formatoProyecto" id="formatoProyecto">
-                                <button class="examinar" id="examinar">Examinar</button>
-                            </div>
-                            <div class="rubrica">
-                                <label for="rubrica">Rúbrica de calificación:</label>
-                                <button class="crearRubrica" id="crearRubrica">Crear Rúbrica</button>
+                                <input type="file" name="formatoProyecto" id="formatoProyecto" accept="image/*">
                             </div>
                             <div class="auspiciador">
                                 <label for="auspiciador">Auspiciador:</label>
@@ -66,5 +61,19 @@
     </div>
     <script src="../js/registro.js"></script>
     <script src="../js/menuInclude.js"></script>
+    <script>
+        //Se verifica que la extensión sea correcta.
+        document.getElementById('formatoProyecto').addEventListener('change', function(event) {
+            const fileInput = event.target;
+            const filePath = fileInput.value;
+            const allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+
+            if (!allowedExtensions.exec(filePath)) {
+                alert("Por favor, seleccione un archivo de imagen válido.");
+                fileInput.value = '';
+                return false;
+            }
+        });
+    </script>
 </body>
 </html>

@@ -29,8 +29,7 @@
                     </div>
                     <div class="archivoProyecto">
                         <label for="archivo">Archivo proyecto:</label>
-                        <input type="file" name="archivo" id="archivo">
-                        <button class="examinar" id="examinar">Examinar</button>
+                        <input type="file" name="archivo" id="archivo" accept="image/*">
                     </div>
                     <div class="area">
                         <label for="area">Areas:</label>
@@ -48,6 +47,20 @@
     </div>
     <script src="../js/registro.js"></script>
     <script src="../js/menuInclude.js"></script>
+    <script>
+        //Se verifica que la extensión sea correcta.
+        document.getElementById('archivo').addEventListener('change', function(event) { //Este ID es del boton, entonces si se cambia arriba, se debe cambiar aquí también
+            const fileInput = event.target;
+            const filePath = fileInput.value;
+            const allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+
+            if (!allowedExtensions.exec(filePath)) {
+                alert("Por favor, seleccione un archivo de imagen válido.");
+                fileInput.value = '';
+                return false;
+            }
+        });
+    </script>
 </body>
 
 </html>

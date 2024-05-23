@@ -2,8 +2,11 @@
     font-family: 'League Spartan', sans-serif;
   }
   
-input[type="file"] {
-    display: none;
+  input[type="file"] {
+    font-size: 18px; /* Cambia el tamaño del texto */
+    padding: 10px; /* Añade padding */
+    cursor: pointer; /* Cambia el cursor para indicar que es clicable */
+    border-radius: 20px;
 }
 
 .contenido {
@@ -19,7 +22,7 @@ input[type="file"] {
 .crearVersionFeria {
     border: 3px solid #4F6E85;
     padding: 20px;
-    width: 70%;
+    width: 80%;
     margin-top: 20px;
     color: #002948;
 }
@@ -69,7 +72,7 @@ input[type="file"] {
 }
 
 .rubrica label{
-    margin-right: 40px;
+    margin-right: 3%;
 }
 
 .auspiciador label{
